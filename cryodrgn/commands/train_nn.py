@@ -382,7 +382,7 @@ def main(args):
     # load the particles
     if args.ind is not None:
         logger.info("Filtering image dataset with {}".format(args.ind))
-        ind = pickle.load(open(args.ind, "rb"))
+        ind = np.loadtxt(args.ind, dtype=int)
     else:
         ind = None
 
