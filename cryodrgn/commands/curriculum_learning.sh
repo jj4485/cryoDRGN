@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Curriculum learning with cryodrgn for noisy particle datasets
-
+#
 # First batch of training
 cryodrgn train_nn output_noisy_particles.mrcs --poses poses.pkl --ctf output_particles_w_ctf.mrcs.pkl --uninvert-data --ind first_10000_indices.pkl -o curriculum_learning_batch1
 
